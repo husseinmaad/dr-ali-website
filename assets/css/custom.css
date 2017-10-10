@@ -44,12 +44,12 @@
 }
 #main-ad-title{
     font-family: 'Tangerine', serif;
-    font-size: 48px; 
+    font-size: 48px;
     color: #c6a451;
     text-shadow: 6px 6px 6px #aaa;
 
 }
-.certificates 
+.certificates
 {
   font-size: 15px;
 }
@@ -64,14 +64,14 @@
 .micro-page-text{
   font-size: 16px;
    font-family: "Times New Roman", Times, serif;
-  
+
 }
 #micro-page-image{
   height: 450px;
 }
 .nav-style{
   font-family: 'Tangerine', serif;
-    font-size: 25px; 
+    font-size: 25px;
     color: #c6a451;
     font-weight: bold;
 }
@@ -87,7 +87,7 @@
 }
 .custom-main-style{
   font-family: 'Tangerine', serif;
-    font-size: 35px; 
+    font-size: 35px;
     color: #c6a451;
     text-shadow: 6px 6px 6px #aaa;
 }
@@ -112,7 +112,7 @@ nav > ul > li a{
 
 .logo-design{
   font-family: 'Tangerine', serif;
-  font-size: 35px; 
+  font-size: 35px;
   color: #c6a451;
   font-weight: bold;
 }
@@ -407,3 +407,53 @@ nav > ul > li a{
     text-align: right;
     visibility: hidden;
   }
+  /*bootstrap carousel*/
+  .multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+h1{
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
