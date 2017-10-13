@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Dr.Ali - Microscope Dentistry</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+
     <link rel="stylesheet" href="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-      <!-- animate css -->
-      <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
+
 <body class="container">
-  <!-- Header -->
-      <header id="header">
+    <!-- Header -->
+    <header id="header">
         <!-- <h1 class="logo-design">Microscope Dentistry</h1> -->
         <div><img class="img-circle" src="./images/test-logo.png"></div>
         <nav class="nav-style">
-          <ul>
-            <li><a class="nav-hover link" href="./index.html">Main Page</a></li>
-            <li><a class="nav-hover link"  href="./microscope.html">Microscope</a></li>
-            <li><a class="nav-hover link"  href="./who_i_am.html">Who I Am</a></li>
-            <li><a class="nav-hover link"  href="./services.html">Services</a></li>
-            <li><a class="nav-hover"  href="./contact.html">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a class="nav-hover link" href="./index.html">Main Page</a></li>
+                <li><a class="nav-hover link" href="./microscope.html">Microscope</a></li>
+                <li><a class="nav-hover link" href="./who_i_am.html">Who I Am</a></li>
+                <li><a class="nav-hover link" href="./services.html">Services</a></li>
+                <li><a class="nav-hover" href="./contact.html">Contact</a></li>
+            </ul>
         </nav>
-      </header>
-      <div class="row row-card-space">
+        <button id="nav-menu" type="button" class="btn nav-menu visible-xs"data-toggle="collapse" data-target="#demo"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+            <div id="demo" class="collapse text-right mobile_nav">
+                <ul>
+                <li><a class="mobile_nav_item" href="./index.html">Main Page</a></li>
+                <li><a class="mobile_nav_item"href="./microscope.html">Microscope</a></li>
+                <li><a class="mobile_nav_item" href="./who_i_am.html">Who I Am</a></li>
+                <li><a class="mobile_nav_item" href="./services.html">Services</a></li>
+                <li><a class="mobile_nav_item" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+    </header>
+    <div class="row row-card-space">
         <div class="col-md-7">
             <p class="header-contact-font">Do you have a question or would you like to schedule an appointment?</p>
             <p class="header-contact-font">Please contact us on this email :</p>
@@ -44,68 +53,73 @@
             <p class="header-contact-font">To book an appointment or need to call the reception: </p> ‎
             <p class="contact-text-font2"><span><strong>Phone: </strong></span>+43 1 50 55 800</p>
 
-            <p class="header-contact-font">In case of medical emergencies:</p> 
-            ‎<p class="contact-text-font2"><span><strong>Phone: </strong></span>+43 699 101 88 293</p>
+            <p class="header-contact-font">In case of medical emergencies:</p>
+            ‎
+            <p class="contact-text-font2"><span><strong>Phone: </strong></span>+43 699 101 88 293</p>
         </div>
         <div id="contact-section2" class="col-md-5">
-          <p class="header-contact-font">Working Hours</p>
-          <ul class="contact-text-font">
-            <li>Monday        <strong>08:00-18:00</strong></li>
-            <li>Tuesday      <strong>08:00-14:00</strong></li>
-            <li>Wednesday  <strong>08:00-18:00</strong></li>
-            <li>Thursday      <strong>08:00-14:00</strong></li>
-            <li>Friday         <strong>08:00-13:00</strong></li>
-          </ul>
-          <div>
-            <p class="header-contact-font">Find Us On Google Map:</p>
-            <div id="map" style="width: 400px; height: 350px;"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row row-card-space">
-        <div class="col-md-12">
-      <!-- Contact Form -->
-          <section id="contact" class="main style3 secondary">
-            <div class="content">
-              <header>
-                <h2 class="header-contact-form">Contact Us.</h2>
-              </header>
-              <div class="box">
-                <form method="post" action="#">
-                  <div class="field half first"><input type="text" name="name" placeholder="Name" /></div>
-                  <div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-                  <div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-                  <ul class="actions">
-                    <li><input id="form-btn" type="submit" value="Send Message" /></li>
-                  </ul>
-                </form>
-              </div>
+            <p class="header-contact-font">Working Hours</p>
+            <ul class="contact-text-font">
+                <li>Monday <strong>08:00-18:00</strong></li>
+                <li>Tuesday <strong>08:00-14:00</strong></li>
+                <li>Wednesday <strong>08:00-18:00</strong></li>
+                <li>Thursday <strong>08:00-14:00</strong></li>
+                <li>Friday <strong>08:00-13:00</strong></li>
+            </ul>
+            <div>
+                <p class="header-contact-font">Find Us On Google Map:</p>
+                <div id="map" style="width: 400px; height: 350px;"></div>
             </div>
-          </section>
         </div>
-      </div>
-      <script>
-         function initMap() {
-        var address = {lat: 48.190565, lng: 16.37934};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: address
-        });
-        var marker = new google.maps.Marker({
-          position: address,
-          map: map
-        });
-      }
+    </div>
+    <div class="row row-card-space">
+        <div class="col-md-12">
+            <!-- Contact Form -->
+            <section id="contact" class="main style3 secondary">
+                <div class="content">
+                    <header>
+                        <h2 class="header-contact-form">Contact Us.</h2>
+                    </header>
+                    <div class="box">
+                        <form method="post" action="#">
+                            <div class="field half first">
+                                <input type="text" name="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" placeholder="Message" rows="6"></textarea>
+                            </div>
+                            <ul class="actions">
+                                <li>
+                                    <input id="form-btn" type="submit" value="Send Message" />
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        function initMap() {
+            var address = {
+                lat: 48.190565,
+                lng: 16.37934
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: address
+            });
+            var marker = new google.maps.Marker({
+                position: address,
+                map: map
+            });
+        }
     </script>
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjvEkI9NcnATufE0LfByI7w3iWk3u0FI8&callback=initMap"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjvEkI9NcnATufE0LfByI7w3iWk3u0FI8&callback=initMap" async defer></script>
 </body>
 
 </html>
-
-
-
-
-
-    

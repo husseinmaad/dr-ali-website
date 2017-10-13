@@ -4,13 +4,11 @@
     <title>Dr.Ali - Microscope Dentistry</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!-- Latest compiled and minified CSS -->
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -31,34 +29,44 @@
             <li><a class="nav-hover" href="./contact.html">Contact</a></li>
           </ul>
         </nav>
+        <button type="button" class="btn nav-menu visible-xs" data-toggle="collapse" data-target="#demo"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+            <div id="demo" class="collapse text-right mobile_nav">
+                <ul>
+                <li><a class="mobile_nav_item" href="./index.html">Main Page</a></li>
+                <li><a class="mobile_nav_item"href="./microscope.html">Microscope</a></li>
+                <li><a class="mobile_nav_item" href="./who_i_am.html">Who I Am</a></li>
+                <li><a class="mobile_nav_item" href="./services.html">Services</a></li>
+                <li><a class="mobile_nav_item" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
       </header>
         <div class="row">
           <div class="col-md-12">
             <div class="carousel slide multi-item-carousel" id="theCarousel">
               <div class="carousel-inner">
                 <div class="item active">
-                  <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching6.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching1.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching2.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching3.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching4.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching5.png" class="img-responsive"></a></div>
                 </div>
                 <!-- add  more items here -->
                 <!-- Example item start:  -->
 
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching7.png" class="img-responsive"></a></div>
                 </div>
 
                 <!--  Example item end -->
@@ -71,7 +79,7 @@
       <script type="text/javascript">
               // Instantiate the Bootstrap carousel
         $('.multi-item-carousel').carousel({
-            interval: 3000
+            interval: 7000
           });
 
         $('.multi-item-carousel').carousel('cycle');
