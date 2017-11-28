@@ -2094,7 +2094,7 @@
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/DSC_0079.jpg");
+		background: url("images/overlay.png"), url("../../images/rsz_dsc_0079.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2114,7 +2114,7 @@
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/7F8B6020.jpg");
+		background: url("images/overlay.png"), url("../../images/rsz_7f8b6020.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;

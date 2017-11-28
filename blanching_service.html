@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -45,28 +45,28 @@
             <div class="carousel slide multi-item-carousel" id="theCarousel">
               <div class="carousel-inner">
                 <div class="item active">
-                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching6.jpg" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img style="width: 300px; height: 250px;" src="./images/services/bleaching/bleaching6.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching1.jpg" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img style="width: 300px; height: 250px;" src="./images/services/bleaching/bleaching1.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching2.jpg" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img style="width: 300px; height: 250px;" src="./images/services/bleaching/bleaching2.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching3.jpg" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img style="width: 300px; height: 250px;" src="./images/services/bleaching/bleaching3.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching4.jpg" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img style="width: 300px; height: 250px;" src="./images/services/bleaching/bleaching4.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching5.png" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img style="width: 300px; height: 250px;" src="./images/services/bleaching/bleaching5.png" class="img-responsive"></a></div>
                 </div>
                 <!-- add  more items here -->
                 <!-- Example item start:  -->
 
                 <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="./images/services/bleaching/bleaching7.png" class="img-responsive"></a></div>
+                  <div class="col-xs-4"><a href="#1"><img style="width: 300px; height: 250px;" src="./images/services/bleaching/bleaching7.png" class="img-responsive"></a></div>
                 </div>
 
                 <!--  Example item end -->
@@ -76,10 +76,45 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div col-md-8>
+            <section class="row-card-space">
+            <div class="space container">
+              <h3 class=" micro-page-title">Teeth Whitening</h3>
+              <p class="micro-page-text">Teeth whitening is a an excellent way to restore the natural color of your teeth and remove stains that have accumulated over time. To do this, we utilize the Philipps ZOOM procedure (in-office tooth whitening) and/or a tray whitening system (at-home tooth whitening). We recommend a combination of both to accomplish the best results. We advise that you treat any dental disease prior to whitening your teeth in order to avoid unwanted reactions.</p> 
+
+              <h3 class="gold-title micro-page-title">In-Office Whitening</h3>
+              <p class="micro-page-text">When we whiten your teeth in the office, a whitening gel is applied onto your teeth. Then, we use the Philipps ZOOM lamp to shine a light onto your teeth for about 15 minutes. Depending on how much lighter you wish your teeth to be, and to obtain the best results, this process is repeated 3 to 4 times.
+              </p> 
+
+              <h3 class="gold-title micro-page-title">At-Home Whitening</h3>
+              <p class="micro-page-text">First, we make an impression of your teeth so we can create your personalized whitening trays.  At home, you will apply a whitening gel into the trays and wear them daily for few hours a day. Treatment should total a week.
+
+              It is difficult to predict how much lighter your teeth will become as the results can vary with each person. In general, you can expect a very obvious change in the color of your teeth after 2-3 sessions, which will last for about 2-3 years depending on each patient’s life style (smoker, non smoker, coffee drinker etc).</p>
+
+              <p class="micro-page-text">Please contact us today to see if you are a candidate for this type of teeth whitening.</p>
+           
+            </div>         
+          </section>
+          </div>
+        </div>
+       <!-- zoom modal -->
+        <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+          <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+              <div>
+                <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span></button>
+              </div>
+              <div class="modal-body">
+                <img src="" class="enlargeImageModalSource" style="width: 565px;height: 400px;">
+              </div>
+            </div>
+          </div>
+        </div>
       <script type="text/javascript">
               // Instantiate the Bootstrap carousel
         $('.multi-item-carousel').carousel({
-            interval: 7000
+            interval: 5000
           });
 
         $('.multi-item-carousel').carousel('cycle');
@@ -99,6 +134,15 @@
         }
         });
       </script>
+      <script type="text/javascript">
+        $(function() {
+      $('img').on('click', function() {
+      $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+      $('#enlargeImageModal').modal('show');
+    });
+});
+      </script>
 </body>
 
 </html>
+
